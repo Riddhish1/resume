@@ -32,19 +32,23 @@ export function Navbar() {
   }, [router])
 
   return (
-    <nav className="flex items-center justify-between mb-12 text-sm">
-      <div className="flex space-x-4">
+    <nav className="flex items-center justify-between mb-16 text-sm border-b border-border pb-6">
+      <div className="flex space-x-8">
         <Link
           href="/"
-          className="hover:text-accent transition-colors duration-200"
+          className="text-gray-400 hover:text-accent transition-all duration-200 relative group flex items-center gap-2"
         >
-          [h] home
+          <span className="text-xs px-1.5 py-0.5 bg-accent/10 text-accent border border-accent/30 rounded font-medium">h</span>
+          <span>home</span>
+          <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent transition-all duration-200 group-hover:w-full"></span>
         </Link>
         <Link
           href="/projects"
-          className="hover:text-accent transition-colors duration-200"
+          className="text-gray-400 hover:text-accent transition-all duration-200 relative group flex items-center gap-2"
         >
-          [p] projects
+          <span className="text-xs px-1.5 py-0.5 bg-accent/10 text-accent border border-accent/30 rounded font-medium">p</span>
+          <span>projects</span>
+          <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent transition-all duration-200 group-hover:w-full"></span>
         </Link>
       </div>
     </nav>

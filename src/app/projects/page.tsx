@@ -60,18 +60,18 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <main className="animate-fade-in-up">
-      <h1 className="text-4xl font-bold mb-8 text-white">
-        <span className="text-accent mr-2">*</span>
+      <h1 className="text-5xl font-bold mb-6 text-white tracking-tight">
+        <span className="text-accent mr-3 text-5xl font-light">/</span>
         <ScrambleText text="projects" />
       </h1>
 
-      <p className="text-gray-400 mb-12 leading-relaxed">
+      <p className="text-gray-400 mb-16 leading-relaxed max-w-2xl">
         here are some of the projects i&apos;ve worked on. i love building tools
         that make developers&apos; lives easier and exploring new technologies
         along the way.
       </p>
 
-      <div className="space-y-12">
+      <div className="space-y-10">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}

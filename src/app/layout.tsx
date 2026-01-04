@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     template: "%s | Riddhish Bonde",
   },
   description: "Developer, cardist and maker of things.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
   openGraph: {
     title: "Riddhish Bonde",
     description: "Developer, cardist and maker of things.",

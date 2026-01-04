@@ -23,21 +23,21 @@ export function ProjectCard({
   links,
 }: ProjectCardProps) {
   return (
-    <div className="group border border-gray-800 p-6 transition-colors hover:border-accent/50">
+    <div className="group border-l-4 border-border hover:border-accent pl-6 py-6 -ml-1 transition-all duration-300 hover:bg-accent/5 rounded-r">
       <Link href={href} target="_blank" rel="noopener noreferrer">
         <div className="flex justify-between items-start mb-4">
           <h2 className="text-2xl font-bold text-white group-hover:text-accent transition-colors">
             {title}
           </h2>
-          <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-accent transition-colors" />
+          <ArrowUpRight className="w-5 h-5 text-gray-600 group-hover:text-accent transition-all duration-200 group-hover:translate-x-1 group-hover:-translate-y-1" />
         </div>
       </Link>
 
-      <p className="text-sm text-gray-400 mb-4">
-        {role} {period && `(${period})`}
+      <p className="text-xs text-gray-500 mb-4 uppercase tracking-wide">
+        {role} {period && `• ${period}`}
       </p>
 
-      <p className="text-gray-300 mb-6">{description}</p>
+      <p className="text-gray-400 mb-6 leading-relaxed">{description}</p>
 
       <div className="space-y-6">
         <div>
@@ -64,7 +64,7 @@ export function ProjectCard({
 
         {links && links.length > 0 && (
           <div>
-            <h3 className="text-white font-semibold mb-2">links</h3>
+            <h3 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">links</h3>
             <div className="flex flex-wrap gap-3">
               {links.map((link) => (
                 <Link
@@ -72,10 +72,10 @@ export function ProjectCard({
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent hover:underline text-sm flex items-center gap-1"
+                  className="text-accent hover:text-accent-hover text-sm flex items-center gap-1.5 border border-accent/30 px-3 py-1.5 rounded hover:bg-accent/10 transition-all duration-200 group"
                 >
                   {link.text}
-                  <ArrowUpRight className="w-3 h-3" />
+                  <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
                 </Link>
               ))}
             </div>

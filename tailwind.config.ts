@@ -15,7 +15,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        accent: "#ff6b35",
+        accent: "#a78bfa",
+        "accent-hover": "#8b5cf6",
+        "accent-muted": "#7c3aed",
+        border: "#2d2d2d",
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
     },
   },
