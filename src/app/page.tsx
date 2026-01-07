@@ -21,10 +21,11 @@ const projectItems = [
     href: "https://github.com/Riddhish1/Glass",
   },
   {
-    title: "FADE",
+    title: "CogniScrape",
+    description:
+      "Intelligent web scraping with LLMs — a TypeScript library combining traditional scraping with LLMs for structured data extraction.",
     role: "creator",
-    description: "Open-source AI code generation platform with live preview",
-    href: "https://github.com/Riddhish1/FADE",
+    href: "https://github.com/Riddhish1/CogniScrape",
   },
 ]
 
