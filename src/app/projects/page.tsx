@@ -22,6 +22,34 @@ const projects = [
     ],
   },
   {
+    title: "CogniScrape",
+    description:
+      "Intelligent web scraping with LLMs — a TypeScript library combining traditional scraping with LLMs for structured data extraction.",
+    role: "creator",
+    period: "2025–present",
+    achievements: [
+      "Dual LLM support: Ollama (local) and Google Gemini (cloud)",
+      "Graph-based, composable node pipelines for reusable scraping flows",
+      "Production-ready features: caching, retries, rate limiting, proxy rotation",
+      "Schema validation with Zod and multi-format exports (JSON, CSV, XML, PDF)",
+      "Browser automation via Playwright and RAG integration for improved accuracy",
+    ],
+    technologies: [
+      "TypeScript",
+      "Node.js",
+      "Playwright",
+      "Zod",
+      "Gemini API",
+      "Ollama",
+      "RAG",
+    ],
+    href: "https://github.com/Riddhish1/CogniScrape",
+    links: [
+      { text: "GitHub", href: "https://github.com/Riddhish1/CogniScrape" },
+      { text: "npm", href: "https://www.npmjs.com/package/cogniscrape" },
+    ],
+  },
+  {
     title: "FADE",
     description:
       "Open-source AI code generation platform that transforms user prompts into working code with a live preview",
@@ -55,6 +83,7 @@ const projects = [
       { text: "GitHub", href: "https://github.com/Riddhish1/Pixiro" },
     ],
   },
+  
 ]
 
 export default function ProjectsPage() {
