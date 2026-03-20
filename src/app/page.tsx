@@ -4,6 +4,13 @@ import { LinksSection } from "@/components/links-section"
 
 const workItems: Item[] = [
   {
+    title: "Sereno",
+    role: "ai developer intern",
+    description:
+      "built salesforce automation for JSW Steel's lead discovery platform and a Twilio-powered WhatsApp governance workflow for the Government of Maharashtra, using AI analysis to turn raw inputs into structured CRM and citizen insights.",
+    href: "#",
+  },
+  {
     title: "GamutX",
     role: "full stack developer intern",
     period: "may 2025 - august 2025",

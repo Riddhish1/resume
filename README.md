@@ -1,3 +1,3 @@
 <samp>
-stack: next.js, tailwindcss, typescript, mdx, vercel
+My resume 
 </samp>
